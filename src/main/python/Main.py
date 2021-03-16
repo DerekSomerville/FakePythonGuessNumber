@@ -19,6 +19,15 @@ class Main:
             elif result < self.random.getMaxNumber():
                 self.output.output("Wrong")
 
+    def setOutput(self,output):
+        self.output = output
+
+    def setInput(self,input):
+        self.input = input
+
+    def setRandom(self,random):
+        self.random = random
+
     def main():
        main = Main()
        main.play()
