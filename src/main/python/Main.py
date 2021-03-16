@@ -1,11 +1,11 @@
-from ConsoleInput import ConsoleInput
-from ConsoleOutput import ConsoleOutput
-from RandomInput import RandomInput
+from src.main.python.ConsoleInput import ConsoleInput
+from src.main.python.ConsoleOutput import ConsoleOutput
+from src.main.python.RandomInput import RandomInput
 
 class Main:
-    output = ConsoleOutput();
-    input = ConsoleInput();
-    random = RandomInput();
+    output = None
+    input = None
+    random = None
 
     def __init__(self,output=None,input=None,random=None):
         if output == None:

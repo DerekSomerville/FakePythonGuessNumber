@@ -9,3 +9,6 @@ class TestInput(Input):
 
     def setInputList(self,inputList):
         self.inputList = inputList
+
+    def getMaxNumber(self):
+        return 5

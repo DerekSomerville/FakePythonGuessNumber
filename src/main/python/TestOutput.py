@@ -7,5 +7,8 @@ class TestOutput(Output):
     def setOutputList(self,outputList):
         self.outputlist = outputList
 
-    def print(self, request):
+    def output(self, request):
         self.outputlist.append(request)
+
+    def getOutputList(self):
+        return self.outputlist

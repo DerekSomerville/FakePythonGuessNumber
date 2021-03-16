@@ -13,4 +13,6 @@ class Input(ABC):
         return int(response)
 
 
+    def getMaxNumber(self):
+        return 5
 
