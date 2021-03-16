@@ -7,6 +7,20 @@ class Main:
     input = ConsoleInput();
     random = RandomInput();
 
+    def __init__(self,output=None,input=None,random=None):
+        if output == None:
+            self.output = ConsoleOutput()
+        else:
+            self.output = output
+        if input == None:
+            self.input = ConsoleInput()
+        else:
+            self.input = input
+        if random == None:
+            self.random = RandomInput()
+        else:
+            self.random = random
+
     def play(self):
         result = 0;
 
