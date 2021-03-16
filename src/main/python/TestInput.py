@@ -7,3 +7,5 @@ class TestInput(Input):
     def getInputString(self, request):
         return self.inputList.pop(0)
 
+    def setInputList(self,inputList):
+        self.inputList = inputList

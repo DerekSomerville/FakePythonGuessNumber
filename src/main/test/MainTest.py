@@ -10,6 +10,7 @@ class MainTest(unittest.TestCase):
         recordedOutput = readFromFile.read("ConsoleOutput.csv")
         testOutput = TestOutput()
         main = Main()
+
         self.assertEqual(recordedOutput, testOutput)
 
 
