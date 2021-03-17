@@ -10,8 +10,10 @@ class MainTest(unittest.TestCase):
         recordedOutput = readFromFile.read("ConsoleOutput.csv")
         testOutput = TestOutput()
         main = Main()
-
-        self.assertEqual(recordedOutput, testOutput)
+        main.play();
+        print("Recorded Output: ",recordedOutput)
+        print("TestOutput: ",testOutput.getOutputList())
+        self.assertEqual(recordedOutput, testOutput.getOutputList())
 
 
 if __name__ == '__main__':
